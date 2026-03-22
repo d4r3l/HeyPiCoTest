@@ -26,6 +26,28 @@ Untuk dokumentasi dalam Bahasa Indonesia, lihat [README.md](README.md).
 
 ---
 
+## 🚀 Quick Start
+
+```bash
+# 1. Clone repository
+git clone https://github.com/d4r3l/HeyPiCoTest.git
+cd HeyPiCoTest
+
+# 2. Setup environment
+cp .env.example .env
+# Edit .env and add API Keys from Google Cloud Console
+
+# 3. Run with Docker
+docker-compose up -d
+
+# 4. Access applications
+# - Open WebUI: http://localhost:3000
+# - Backend API: http://localhost:8000
+# - API Docs: http://localhost:8000/docs
+```
+
+---
+
 ## 🏗️ Architecture
 
 ```
@@ -312,8 +334,8 @@ TaskCodeTestHeyPico/
 ├── docker-compose.yml                 # Full stack deployment
 ├── .env.example                       # Environment template
 ├── .gitignore                         # Git ignore rules
-└── README.md                          # This file (English)
-└── README.id.md                       # Indonesian version
+├── README.en.md                       # This file (English)
+└── README.md                          # Indonesian version
 ```
 
 ---
@@ -476,3 +498,12 @@ This project was created for Fullstack Developer position technical test.
 - [Ollama](https://ollama.ai/)
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Google Maps Platform](https://developers.google.com/maps)
+
+---
+
+## 🔗 Links
+
+- **GitHub Repository:** https://github.com/d4r3l/HeyPiCoTest
+- **Open WebUI:** https://openwebui.com
+- **Ollama:** https://ollama.ai
+- **Google Maps Platform:** https://developers.google.com/maps

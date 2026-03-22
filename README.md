@@ -2,6 +2,14 @@
 
 Solusi backend dan integrasi frontend yang memungkinkan **Local LLM** (via Ollama & Open WebUI) untuk menampilkan **Google Maps embedded** ketika user bertanya tentang lokasi tempat (makan, jalan-jalan, dll).
 
+---
+
+## 🇬🇧 English Version
+
+For English documentation, see [README.en.md](README.en.md).
+
+---
+
 ## 📋 Daftar Isi
 
 - [Arsitektur](#arsitektur)
@@ -15,6 +23,28 @@ Solusi backend dan integrasi frontend yang memungkinkan **Local LLM** (via Ollam
 - [API Documentation](#api-documentation)
 - [Troubleshooting](#troubleshooting)
 - [Asumsi Teknis](#asumsi-teknis)
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone repository
+git clone https://github.com/d4r3l/HeyPiCoTest.git
+cd HeyPiCoTest
+
+# 2. Setup environment
+cp .env.example .env
+# Edit .env dan isi API Keys dari Google Cloud Console
+
+# 3. Run dengan Docker
+docker-compose up -d
+
+# 4. Akses aplikasi
+# - Open WebUI: http://localhost:3000
+# - Backend API: http://localhost:8000
+# - API Docs: http://localhost:8000/docs
+```
 
 ---
 
@@ -465,3 +495,12 @@ Project ini dibuat untuk tujuan tes teknis Fullstack Developer position.
 - [Ollama](https://ollama.ai/)
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Google Maps Platform](https://developers.google.com/maps)
+
+---
+
+## 🔗 Links
+
+- **GitHub Repository:** https://github.com/d4r3l/HeyPiCoTest
+- **Open WebUI:** https://openwebui.com
+- **Ollama:** https://ollama.ai
+- **Google Maps Platform:** https://developers.google.com/maps
