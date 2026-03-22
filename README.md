@@ -504,3 +504,15 @@ Project ini dibuat untuk tujuan tes teknis Fullstack Developer position.
 - **Open WebUI:** https://openwebui.com
 - **Ollama:** https://ollama.ai
 - **Google Maps Platform:** https://developers.google.com/maps
+
+---
+
+## 📸 Screenshot Installation
+
+<img width="1897" height="295" alt="localhost8000health" src="https://github.com/user-attachments/assets/8547c566-262e-46f5-92e7-b3f6dc30073c" />
+
+<img width="1902" height="1008" alt="localhost3000webui" src="https://github.com/user-attachments/assets/deda594a-d587-4d5d-8091-8cdc3a428038" />
+
+<img width="1902" height="1011" alt="localhost3000webuiGeneral" src="https://github.com/user-attachments/assets/ae412079-f95e-4389-a8eb-a5a3c613a7c6" />
+
+<img width="1888" height="1011" alt="localhost3000User" src="https://github.com/user-attachments/assets/3d4eadb3-603d-4d36-b357-0cae4efccc11" />
