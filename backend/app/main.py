@@ -3,11 +3,19 @@ FastAPI Backend for Google Maps Integration with Open WebUI
 Handles location queries and returns embeddable Google Maps URLs
 """
 
+import sys
+import os
+from pathlib import Path
+
+# Add app directory to Python path for proper imports
+app_dir = Path(__file__).parent
+sys.path.insert(0, str(app_dir))
+
 from fastapi import FastAPI, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from typing import Optional, List
-import os
 from dotenv import load_dotenv
 
 # Import services
@@ -207,11 +215,14 @@ async def get_place_embed(
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request, exc):
     """Custom error handler untuk HTTPException"""
-    return {
-        "success": False,
-        "error": exc.detail,
-        "status_code": exc.status_code
-    }
+    return JSONResponse(
+        status_code=exc.status_code,
+        content={
+            "success": False,
+            "error": exc.detail,
+            "status_code": exc.status_code
+        }
+    )
 
 
 if __name__ == "__main__":
