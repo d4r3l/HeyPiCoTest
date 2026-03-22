@@ -22,7 +22,7 @@ from typing import Optional, Dict, Any
 
 # Metadata untuk Open WebUI Functions
 __version__ = "1.0.0"
-__author__ = "Fullstack Developer Candidate"
+__author__ = "Muhammad Reza"
 __description__ = "Google Maps Location Finder - Menampilkan peta ketika user bertanya tentang tempat"
 
 

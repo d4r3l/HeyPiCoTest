@@ -466,7 +466,7 @@ This project was created for Fullstack Developer position technical test.
 
 ## 👨‍💻 Author
 
-Fullstack Developer Candidate
+**Muhammad Reza**
 
 ---
 

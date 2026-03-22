@@ -455,7 +455,7 @@ Project ini dibuat untuk tujuan tes teknis Fullstack Developer position.
 
 ## 👨‍💻 Author
 
-Fullstack Developer Candidate
+**Muhammad Reza**
 
 ---
 
