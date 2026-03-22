@@ -326,17 +326,18 @@ class Pipes:
 
 
 # Filter configuration untuk Open WebUI
+# Valves ini akan muncul di UI Open WebUI untuk konfigurasi
 valves = {
     "BACKEND_API_URL": {
         "type": "string",
-        "description": "URL backend FastAPI (contoh: http://localhost:8000)",
+        "description": "URL backend FastAPI (contoh: http://localhost:8000). Untuk Docker, gunakan http://maps-api:8000",
         "required": True,
         "default": "http://localhost:8000"
     },
     "API_SECRET": {
         "type": "string",
-        "description": "API Secret untuk autentikasi (opsional)",
+        "description": "API Secret untuk autentikasi dengan backend. Harus sama dengan API_SECRET di .env backend",
         "required": False,
-        "default": ""
+        "default": "your_secret_api_key_here_change_in_production"
     }
 }
