@@ -466,6 +466,8 @@ Project ini dibuat untuk tujuan tes teknis Fullstack Developer position.
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Google Maps Platform](https://developers.google.com/maps)
 
+---
+
 ## Screenshot Installation in Local PC for evidence
 
 <img width="1897" height="295" alt="localhost8000health" src="https://github.com/user-attachments/assets/8547c566-262e-46f5-92e7-b3f6dc30073c" />
