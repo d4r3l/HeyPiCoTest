@@ -1,0 +1,89 @@
+# ===========================================
+# Docker Compose untuk Full Stack Deployment
+# ===========================================
+# Menjalankan Backend + Open WebUI + Ollama
+
+version: '3.8'
+
+services:
+  # ===========================================
+  # Google Maps Location API (Backend)
+  # ===========================================
+  maps-api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: maps-location-api
+    ports:
+      - "8000:8000"
+    environment:
+      - GOOGLE_PLACES_API_KEY=${GOOGLE_PLACES_API_KEY}
+      - GOOGLE_MAPS_EMBED_API_KEY=${GOOGLE_MAPS_EMBED_API_KEY}
+      - API_SECRET=${API_SECRET:-dev_secret_change_in_production}
+      - ALLOWED_ORIGINS=http://localhost:3000,http://open-webui:8080
+      - LOG_LEVEL=INFO
+    env_file:
+      - .env
+    networks:
+      - maps-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ===========================================
+  # Ollama - Local LLM Server
+  # ===========================================
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-llm
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - maps-network
+    restart: unless-stopped
+    # Uncomment untuk GPU support (NVIDIA)
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  # ===========================================
+  # Open WebUI - LLM Interface
+  # ===========================================
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    ports:
+      - "3000:8080"
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - WEBUI_SECRET_KEY=${WEBUI_SECRET_KEY:-supersecretkey_change_in_production}
+      # Environment variables untuk Functions
+      - BACKEND_API_URL=http://maps-api:8000
+      - API_SECRET=${API_SECRET:-dev_secret_change_in_production}
+    volumes:
+      - open-webui_data:/app/backend/data
+    networks:
+      - maps-network
+    depends_on:
+      - ollama
+      - maps-api
+    restart: unless-stopped
+
+networks:
+  maps-network:
+    driver: bridge
+
+volumes:
+  ollama_data:
+    driver: local
+  open-webui_data:
+    driver: local

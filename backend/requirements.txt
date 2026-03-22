@@ -1,0 +1,31 @@
+# ===========================================
+# Google Maps Location API - Dependencies
+# ===========================================
+# Python 3.9+ required
+
+# FastAPI Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# HTTP Client untuk async requests
+aiohttp==3.9.1
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Data Validation
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# CORS support (included in fastapi, but explicit for clarity)
+# fastapi-cors==0.0.6
+
+# ===========================================
+# Development Dependencies (Optional)
+# ===========================================
+# pytest==7.4.4
+# pytest-asyncio==0.23.3
+# httpx==0.26.0
+# black==23.12.1
+# flake8==7.0.0
+# mypy==1.8.0
