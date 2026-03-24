@@ -509,16 +509,17 @@ Project ini dibuat untuk tujuan tes teknis Fullstack Developer position.
 
 ## 📸 Screenshot Installation
 
-<img width="1897" height="295" alt="localhost8000health" src="https://github.com/user-attachments/assets/8547c566-262e-46f5-92e7-b3f6dc30073c" />
+<img width="1897" height="295" alt="localhost8000health" src="https://github.com/user-attachments/assets/4415050d-83df-4701-ab96-240b867f4970" />
 
-<img width="1902" height="1008" alt="localhost3000webui" src="https://github.com/user-attachments/assets/deda594a-d587-4d5d-8091-8cdc3a428038" />
+<img width="1354" height="670" alt="image" src="https://github.com/user-attachments/assets/2ee28d6d-fdea-4592-a896-25a830f3cf28" />
 
-<img width="1902" height="1011" alt="localhost3000webuiGeneral" src="https://github.com/user-attachments/assets/ae412079-f95e-4389-a8eb-a5a3c613a7c6" />
+<img width="1902" height="1008" alt="localhost3000webui" src="https://github.com/user-attachments/assets/d02dc1e8-202e-43d2-9c79-ebf08a510957" />
 
-<img width="1888" height="1011" alt="localhost3000User" src="https://github.com/user-attachments/assets/3d4eadb3-603d-4d36-b357-0cae4efccc11" />
+<img width="1903" height="1011" alt="image" src="https://github.com/user-attachments/assets/49c3baa6-59ae-495c-af87-7ecc330c4009" />
 
-<img width="1354" height="670" alt="image" src="https://github.com/user-attachments/assets/467cfeae-3ce4-4fe8-b9ec-e0d2f6322b67" />
+<img width="1888" height="1011" alt="image" src="https://github.com/user-attachments/assets/676d8187-6de5-4656-b71c-5364c9fd11d2" />
+
+<img width="1358" height="674" alt="image" src="https://github.com/user-attachments/assets/3b1ea6e4-103d-453e-b26a-d6b0a7093cea" />
 
 
-<img width="1358" height="674" alt="image" src="https://github.com/user-attachments/assets/a09d66b7-fb07-4e7f-8de4-8e096c446e0f" />
 
