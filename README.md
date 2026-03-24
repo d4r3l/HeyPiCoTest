@@ -516,3 +516,9 @@ Project ini dibuat untuk tujuan tes teknis Fullstack Developer position.
 <img width="1902" height="1011" alt="localhost3000webuiGeneral" src="https://github.com/user-attachments/assets/ae412079-f95e-4389-a8eb-a5a3c613a7c6" />
 
 <img width="1888" height="1011" alt="localhost3000User" src="https://github.com/user-attachments/assets/3d4eadb3-603d-4d36-b357-0cae4efccc11" />
+
+<img width="1354" height="670" alt="image" src="https://github.com/user-attachments/assets/467cfeae-3ce4-4fe8-b9ec-e0d2f6322b67" />
+
+
+<img width="1358" height="674" alt="image" src="https://github.com/user-attachments/assets/a09d66b7-fb07-4e7f-8de4-8e096c446e0f" />
+
