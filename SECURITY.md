@@ -12,7 +12,7 @@
 ### ✅ Local Files
 - **File:** `.env`
 - **Status:** API keys replaced with placeholders
-- **Before:** `GOOGLE_PLACES_API_KEY=AIzaSyD...`
+- **Before:** `GOOGLE_PLACES_API_KEY=<actual_key>` (REMOVED)
 - **After:** `GOOGLE_PLACES_API_KEY=your_google_places_api_key_here`
 
 ### ✅ GitHub Repository
