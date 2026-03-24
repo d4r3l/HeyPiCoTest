@@ -31,8 +31,7 @@
 ### 1. REVOKE Old API Keys (IMPORTANT!)
 
 If these API keys were exposed anywhere:
-- `AIzaSyDtglgkNbRJQojhnkbeh41M6SnGUjr66OI`
-- `AIzaSyC7AD89FaBn5WOIviiiJ5CpPDtiVNfkOO0`
+
 
 **Immediately revoke them:**
 
