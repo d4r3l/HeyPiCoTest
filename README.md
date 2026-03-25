@@ -477,12 +477,6 @@ GET http://localhost:8000/api/v1/place/{place_id}/embed
 
 ---
 
-## 📄 License
-
-Project ini dibuat untuk tujuan tes teknis Fullstack Developer position.
-
----
-
 ## 👨‍💻 Author
 
 **Muhammad Reza**

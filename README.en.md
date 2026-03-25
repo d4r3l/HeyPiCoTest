@@ -480,12 +480,6 @@ GET http://localhost:8000/api/v1/place/{place_id}/embed
 
 ---
 
-## 📄 License
-
-This project was created for Fullstack Developer position technical test.
-
----
-
 ## 👨‍💻 Author
 
 **Muhammad Reza**
